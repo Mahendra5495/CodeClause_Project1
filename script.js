@@ -7,7 +7,7 @@ const elements = document.querySelector(".elements");
 const input1 = document.querySelector(".input");
 const input2 = document.querySelector(".output");
 
-// Define conversions
+// Define Conversions Options
 const conversionOptions = {
   area: [
     ["Square Meter", "sq_m"],
@@ -114,6 +114,7 @@ const weight = {
     lb: (w) => w / 16,
   },
 };
+//Spread conversion option objects in single object
 let factors = { ...area, ...length, ...temperature, ...weight };
 
 // Add options to "from" and "to" select elements based on the selected category
